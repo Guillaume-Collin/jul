@@ -22,7 +22,7 @@ def index():
     
     if request.method == 'POST':
         phrase = ''
-        if request.form.get('selection') == 'Ton humeur Jul du jour':
+        if request.form.get('selection') == 'Ton humeur Jul du jur':
             phrase = get_random_sentence(data['verbatim'])
             return render_template("citation.html", citation = phrase)
 
