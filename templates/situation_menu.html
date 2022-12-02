@@ -1,0 +1,41 @@
+
+<html style="background-color:#050505;">
+    <style>
+
+    .button {
+        background-color: #751f7e; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font: bold 10pt Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        cursor: pointer;
+        display: block;
+        margin: 40;
+    }
+    
+    .center {
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+    <body style="background-color:#050505;">
+        <form method="post" action="/">
+            {%for i in range(0, len)%}
+            <div class="center">
+                <input class="button" type="submit" name="selection" value="{{categories[i]}}">
+            </div>
+            {%endfor%}
+        
+    </form>
+    <div class="center">
+        <form method="post" action="/">
+            <input type="image" src="static/main_jul.png" name="return" />
+        </form>
+    </div>
+    </body>
+</html>
+    
